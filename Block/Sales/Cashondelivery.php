@@ -40,6 +40,9 @@ class Cashondelivery extends Template
         $source = $parent->getSource();
 
         $payment = $this->getPayment($source);
+
+        $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+        $objectManager->get(\Psr\Log\LoggerInterface::class)->debug('['.$payment->getMethod()."paymet]");//mplSzallito_mpl
         if ($payment && ($payment->getMethod() == Payment::CODE)) {
             $fee = new DataObject(
                 [

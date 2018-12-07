@@ -22,9 +22,9 @@ namespace MSP\CashOnDelivery\Model;
 
 use Magento\Payment\Model\Method\AbstractMethod;
 
-class Payment extends AbstractMethod
+class PaymentMPL extends AbstractMethod
 {
-    const CODE = 'msp_cashondelivery';
+    const CODE = 'msp_cashondelivery_mpl';
     const XML_PATH_EXCLUDE_REGIONS = 'payment/msp_cashondelivery/exclude_regions';
 
     protected $_code = self::CODE;
@@ -40,9 +40,9 @@ class Payment extends AbstractMethod
 		$checkoutSession = $objectManager->create('\Magento\Checkout\Model\Session');
 		// get shipping method
 		$shippingMethod = $checkoutSession->getQuote()->getShippingAddress()->getShippingMethod();
-		#$objectManager->get(\Psr\Log\LoggerInterface::class)->debug('Hello PPPOE['.$shippingMethod."==mplSzallito_mpl]");//mplSzallito_mpl
+		$objectManager->get(\Psr\Log\LoggerInterface::class)->debug('Hello PPPOE['.$shippingMethod."==mplSzallito_mpl WOKS]");//mplSzallito_mpl
 
-		$onlyAllowShippingRegex = '/(gebruderSzallito_1)/';
+		$onlyAllowShippingRegex = '/(mplSzallito_mpl)/';
 
 		preg_match($onlyAllowShippingRegex, $shippingMethod, $matches, PREG_OFFSET_CAPTURE);
 

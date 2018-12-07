@@ -34,6 +34,16 @@
                 <group>offline</group>
                 <used_totals>subtotal,tax,shipping</used_totals>
             </msp_cashondelivery>
+            <msp_cashondelivery_mpl>
+                <model>MSP\CashOnDelivery\Model\PaymentMPL</model>
+                <title>Cash on delivery MPL</title>
+                <order_status>pending</order_status>
+                <active>0</active>
+                <allowspecific>0</allowspecific>
+                <sort_order>100</sort_order>
+                <group>offline</group>
+                <used_totals>subtotal,tax,shipping</used_totals>
+            </msp_cashondelivery_mpl>
         </payment>
     </default>
 </config>

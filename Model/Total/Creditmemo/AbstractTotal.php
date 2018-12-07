@@ -32,6 +32,8 @@ abstract class AbstractTotal extends MageAbstractTotal
      */
     protected function _canApplyTotal(Order $order)
     {
+        $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+        $objectManager->get(\Psr\Log\LoggerInterface::class)->debug('['.$order->getPayment()->getMethod()."||paymet in Creditmemo]");//mplSzallito_mpl
         return ($order->getPayment()->getMethod() == 'msp_cashondelivery');
     }
 }
