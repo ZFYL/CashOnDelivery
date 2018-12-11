@@ -26,7 +26,7 @@
         <payment>
             <msp_cashondelivery>
                 <model>MSP\CashOnDelivery\Model\Payment</model>
-                <title>Cash on delivery</title>
+                <title>Cash on delivery codder</title>
                 <order_status>pending</order_status>
                 <active>0</active>
                 <allowspecific>0</allowspecific>
