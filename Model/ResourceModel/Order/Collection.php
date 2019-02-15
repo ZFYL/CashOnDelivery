@@ -1,6 +1,6 @@
 <?php
 
-namespace MSP\CashOnDelivery\Model\ResourceModel\Order;
+namespace MSP\Codgebruder\Model\ResourceModel\Order;
 
 use Magento\Framework\DB\Select;
 

@@ -13,17 +13,17 @@
  * to info@idealiagroup.com so we can send you a copy immediately.
  *
  * @category   MSP
- * @package    MSP_CashOnDelivery
+ * @package    MSP_Testhotfix
  * @copyright  Copyright (c) 2016 IDEALIAGroup srl (http://www.idealiagroup.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-namespace MSP\CashOnDelivery\Model;
+namespace MSP\Testhotfix\Model;
 
 use \Magento\Checkout\Model\Session as CheckoutSession;
 use Magento\Framework\Pricing\PriceCurrencyInterface;
-use MSP\CashOnDelivery\Api\CashondeliveryCartInterface;
-use MSP\CashOnDelivery\Api\CashondeliveryInterface;
+use MSP\Testhotfix\Api\CashondeliveryCartInterface;
+use MSP\Testhotfix\Api\CashondeliveryInterface;
 
 class CashondeliveryCart implements CashondeliveryCartInterface
 {

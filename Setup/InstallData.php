@@ -13,12 +13,12 @@
  * to info@idealiagroup.com so we can send you a copy immediately.
  *
  * @category   MSP
- * @package    MSP_CashOnDelivery
+ * @package    MSP_Codgebruder
  * @copyright  Copyright (c) 2016 IDEALIAGroup srl (http://www.idealiagroup.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-namespace MSP\CashOnDelivery\Setup;
+namespace MSP\Codgebruder\Setup;
 
 use Magento\Framework\Setup\InstallDataInterface;
 use Magento\Framework\Setup\ModuleContextInterface;

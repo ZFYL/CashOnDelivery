@@ -16,7 +16,7 @@
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-namespace MSP\CashOnDelivery\Observer;
+namespace MSP\Codgebruder\Observer;
 
 use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;
@@ -35,11 +35,11 @@ class SalesModelServiceQuoteSubmitBefore implements ObserverInterface
         $order = $observer->getEvent()->getOrder();
         $quote = $observer->getEvent()->getQuote();
 
-        if ($order->getPayment()->getMethod() == 'msp_cashondelivery') {
+        if ($order->getPayment()->getMethod() == 'Codgebruder') {
             $order->setMspCodAmount($quote->getMspCodAmount());
-            $order->setBaseMspCodAmount($quote->getBaseMspCodAmount());
+            $order->setBaseMspCodGebrAmount($quote->getBaseMspCodGebrAmount());
             $order->setMspCodTaxAmount($quote->getMspCodTaxAmount());
-            $order->setBaseMspCodTaxAmount($quote->getBaseMspCodTaxAmount());
+            $order->setBaseMspCodGebrTaxAmount($quote->getBaseMspCodGebrTaxAmount());
         }
     }
 }

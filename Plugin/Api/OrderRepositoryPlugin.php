@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MSP\CashOnDelivery\Plugin\Api;
+namespace MSP\Codgebruder\Plugin\Api;
 
 
 use Magento\Sales\Api\Data\OrderExtensionFactory;

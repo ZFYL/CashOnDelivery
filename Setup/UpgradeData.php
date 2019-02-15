@@ -13,12 +13,12 @@
  * to info@idealiagroup.com so we can send you a copy immediately.
  *
  * @category   MSP
- * @package    MSP_CashOnDelivery
+ * @package    MSP_Codgebruder
  * @copyright  Copyright (c) 2016 IDEALIAGroup srl (http://www.idealiagroup.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-namespace MSP\CashOnDelivery\Setup;
+namespace MSP\Codgebruder\Setup;
 
 use Magento\Framework\Setup\ModuleContextInterface;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
@@ -68,7 +68,7 @@ class UpgradeData implements UpgradeDataInterface
      */
     protected function upgradeTo010200(ModuleDataSetupInterface $setup)
     {
-        $tableName = $setup->getTable('msp_cashondelivery_table');
+        $tableName = $setup->getTable('Codgebruder_table');
         $setup->getConnection()->update($tableName, [
             'region' => '*',
         ]);
